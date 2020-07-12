@@ -1,0 +1,371 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Omega';
+    src:  url('fonts/Omega.ttf');
+}
+@font-face {
+    font-family: 'Science';
+    src:  url('fonts/Science.otf');
+}
+/* DEFAULT STYLES */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Omega','Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{list-style-type: none;}
+h2{
+    color: white;
+    font-family: 'Science';
+    font-size: 50px;
+}
+h3{
+    color: rgb(188, 177, 145);
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+h4{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* MENU PRINCIPAL */
+nav{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 5;
+}
+nav ul{
+    padding: 0px;
+    float: left;
+    background-color: rgba(0,0,0,0.5);
+    width: 200px;
+    height: 156px;
+    font-size: 15px;
+}
+nav li{
+    text-align: left;
+    padding: 10px 15px;
+}
+nav>ul li{position: relative;}
+nav>ul ul{
+    display: none;
+    width: 45%;
+    border-radius: 0px 7px 7px 7px;
+    height: 120px;
+    width: 150px;
+}
+nav>ul li:hover{background-color: #264D82;}
+nav>ul li:hover >ul{
+    display:block;
+    left: 100%;
+    top: 0;
+    position: absolute;
+}
+#volverarriba{
+    position: fixed;
+    float: right;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    top: 90%;
+    left: 95%;
+    z-index: 10;
+    border-radius: 5px;
+}
+#volverarriba:hover{background-color: black}
+/* todos los backgrounds */
+.background{
+    height: 700px;
+    background-size: cover;
+    text-align: center;
+}
+/************************ PÁGINA INICIO **********************/
+/* fondo principal */
+.background > img{
+    display: block;
+    margin: auto;
+    height: 175px;
+    padding-top: 350px;
+}
+#portada{
+    background-image: url("img/Fondoppal.jpg");
+}
+.background > p{
+    padding-top: 50px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-shadow:  -2px 2px 3px #68ADCB;
+    font-family: 'Science';
+}
+/* quienes somos */
+#quienessomos{
+    background-image: url("img/quienessomos.jpg");
+}
+#quienessomos > div{
+    height: 500px;
+    background-color: rgba(0,50,110,0.7);
+    position: relative;
+    z-index: 0;
+    top: 100px;
+}
+#quienessomos > div > h2{padding-top: 80px;}
+#quienessomos > div > img{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    float: left;
+    left: 50px;
+    z-index: 2;
+    top: -80px;
+}
+#quienessomos > div > p{
+    color: white;
+    width: 55%;
+    display: inline-block;
+    padding-top: 40px;
+}
+/************************ PÁGINA LUGARES **********************/
+#fondoarriba{background-image: url("img/fondoespacio.jpg");}
+#fondoarriba > h2{padding-top: 30px}
+#fondoarriba > img{padding-top: 20px}
+#fondobajo{background-image: url("img/lugares2.jpg")}
+.lugar{
+    display: inline-block;
+    background-color: rgba(183, 212, 211, 0.7);
+    height: 800px;
+    width: 25%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    top: -350px;
+    margin-right: 40px;
+}
+.lugar > img{width: 90%; padding-top: 20px; border-radius: 30px 30px 30px 30px}
+.lugar > h3{letter-spacing: 5px; position: relative; top: -30px}
+.lugar > p{padding-top: 30px; color: #00326e; padding-left: 10px; padding-right: 10px}
+
+/************************ PÁGINA CONTACTO **********************/
+#contacto{background-image: url("img/fondocontacto.jpg"); height: 1200px;}
+#falcon > img {height: 1000px; position: relative; top: -250px; margin-right: 20px; margin-right: 20px}
+#falcon{width: 10%; display: inline-block;margin-right: 20px;height: 700px}
+/*TABLA*/
+table{
+  
+    background-color: #927c01;
+    color:#F1F1F1;
+    border-radius: 10px;
+      background-color:rgba(146, 124, 1,0.7);
+    height: 430px;
+    width: 40%;
+    float:left;
+   
+
+}
+#tabla{
+    background: url(img/estrellitastrans.gif)no-repeat ;
+    background-size:86%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 200px;
+    /*margin-left: 40px;
+    margin-top: 150px;
+    padding-bottom: 200px;*/
+}
+td{padding: 0px 6px;}
+tr{height: 50px;}
+#nombre>td{padding-top:10px;}
+#mapa{
+    vertical-align: top;
+    padding-top: 5px;
+}
+/*FORMULARIO*/
+#formulario > h3{text-align: center; color: white}
+#formulario{
+    width: 35%;
+    background: url("img/estrellitastrans.gif") no-repeat ;
+    background-size: 748px;
+    color:white;
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 150px;
+    text-align: left;
+    top: -50px;
+    position: relative;
+
+}
+form{
+    height: 700px;
+    background-color:rgba(146, 124, 1,0.7);
+    border-radius: 10px;
+}
+fieldset{
+    border: 0;
+    padding-top: 12px;
+    padding-left: 14px;
+}
+label,p.tiempo{
+    padding: 0 10px;
+}
+p.tiempo{
+    padding: 10px 10px;
+    font-weight: normal;
+}
+input,select,textarea{
+    border-radius:7px;
+    background-color: #b6d4d3;
+    width: 95%;
+}
+#estancia,#acepto{
+    margin-left: 10px;
+    width:13px; 
+}
+#validar {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 30px;
+}
+label.sms{
+    vertical-align: top;
+    padding-top: 5px;
+}
+/************************ ALGUNAS PÁGINAS **********************/
+/*ENTRE ELLAS COMPARTEN TITULOS  */
+.titulos > h2{padding-top: 30px}
+.titulos > img{padding-top: 20px}
+/*ENTRE ELLAS COMPARTEN UN CUADRO DE INFORMACIÓN DE PLANETAS  */
+.infoplanetas {
+    border-radius:8px;
+    display: block;
+    float:right;
+    width: 45%;
+    margin-top:100px;
+    margin-right: 15px;
+    height: 288px;
+}
+/************************ PÁGINA MARTE **********************/
+#marte{background: url("img/marteportada.jpg") no-repeat center}
+.background > #Marte{
+    background-color: #b16f55;
+    background-color: rgba(177, 111, 85,0.7);
+    box-shadow: 0 0 5px 5px #b16f55;
+}
+ p{
+    padding: 15px 10px;
+    font-weight: bold;
+}
+/************************ PÁGINA SATURNO **********************/
+#saturno{background: url("img/saturnoportada.jpg"); background-repeat: no-repeat; background-size: cover}
+.background > #Saturno{
+    background-color: #00326e;
+    background-color:rgba(0, 50, 110,0.7);
+    box-shadow: 0 0 5px 5px #00326e;
+    color: white;
+}
+/************************ PÁGINA JUPITER **********************/
+#jupiter{background: url("img/jupiterportada.jpg"); background-size: cover;}
+.background > #Jupiter{
+    background-color: #927c01;
+    background-color:rgba(146, 124, 1,0.7);
+    box-shadow: 0 0 5px 5px #927c01;
+}
+/* FOOTER */
+#footerprincipal{
+    background-color: #b6d4d3;
+    height: 190px;
+}
+.footercolumna{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 40px;
+    text-align: center;
+    float: left;
+}
+.footercolumna a{color: #00326e;}
+.footercolumna a:hover{text-decoration: underline;}
+#footerimagen{
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 30%;
+}
+#footerimagen > img{
+    width: 300px;
+}
+#copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* EFECTOS */
+@keyframes balanceo {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        transform: translateX(1px) rotate(0);
+    }
+    100% {
+        transform: translateX(-1px) rotate(0);
+    }
+}
+.balanceo:hover{
+    animation-name: balanceo;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.ampliar {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.ampliar:hover, .ampliar:focus, .ampliar:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}

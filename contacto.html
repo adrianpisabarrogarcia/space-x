@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>CONTACTO - Space X</title>
+    <meta charset="utf-8">
+    <meta name="description" content="página de viajes a planetas de Elon musk">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="index.html#quienessomos">QUIÉNES SOMOS</a></li>
+            <li><a href="lugares.html">LUGARES</a>
+                <ul>
+                    <li><a href="saturno.html">Saturno</a></li>
+                    <li><a href="marte.html">Marte</a></li>
+                    <li><a href="jupiter.html">Jupiter</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div id="volverarriba">
+        <a href="#">^</a>
+    </div>
+</header>
+<main>
+    <div class="background titulos" id="contacto">
+        <h2>CONTACTO</h2>
+        <img src="img/logo.png">
+        <div id="tabla">
+            <table>
+                <tr id="nombre">
+                    <td >NOMBRE EMPRESA:</td>
+                    <td>Space X</td>
+                </tr>
+                <tr>
+                    <td>DIRECCIÓN:</td>
+                    <td>C/Brasil, Nº6</td>
+                </tr>
+                <tr>
+                    <td>PAÍS:</td>
+                    <td>USA, California</td>
+                </tr>
+                <tr>
+                    <td id="mapa">MAPA:</td>
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421021.48403857497!2d-120.32029299138118!3d34.471680412479444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe002d5ad4d9c26cb!2sSpaceX%20Landing%20Zone%204!5e0!3m2!1ses!2ses!4v1581504789469!5m2!1ses!2ses" width="350" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                </tr>
+            </table>
+        </div>
+        <div id="falcon">
+            <img src="img/falcon.png" class="ampliar">
+        </div>
+        <div id="formulario">
+            <h3>RESERVA</h3>
+            <form  action="#" method="post">
+                <fieldset>
+
+                <label for="name">Nombre: *</label><br>
+                <input type="text" name="nombre" id="name" required>
+                <br>
+                <br>
+
+                <label for="surname">Apellidos:</label><br>
+                <input type="text" name="apellidos" id="surname">
+                <br>
+                <br>
+
+                <label for="email">Email: *</label><br>
+                <input type="text" name="email" id="email" required>
+                <br>
+                <br>
+
+                <label for="tlf">Teléfono:</label><br>
+                <input type="tel" name="telefono" id="tlf">
+                <br>
+                <br>
+
+                <label for="fecha">Fecha de nacimiento: *</label><br>
+                <input type="date" name="fecha" size="20" id="fecha" required>
+                <br>
+                <br>
+
+                <label for="destinos">Selecciona tu destino interesado: *</label>
+                            <select id="destinos" name="destinos" required>
+                                <optgroup label="DESTINOS">
+                                    <option>Jupiter</option>
+                                    <option>Saturno</option>
+                                    <option>Marte</option>
+                                </optgroup>
+                            </select>
+                <br>
+                <br>
+                <label for="personas">Selecciona el número de personas ineresadas: *</label>
+                            <select id="personas" name="personas" required>
+                                    <option>1 persona</option>
+                                    <option>2 personas</option>
+                                    <option>3 personas</option>
+                                    <option>4 personas</option>
+                                    <option>5 personas</option>
+                                    <option>6 personas</option>
+                                    <option>Más de 6 personas</option>
+                            </select>
+
+                <p class="tiempo">Tiempo de estancia:</p>
+                            <input type="radio" name="tiempo" value="2semanas" id="estancia">
+                            <label for="estancia">Una semanas</label>
+                            <input type="radio" name="tiempo" value="3semanas" id="estancia">
+                            <label for="estancia">Dos Semanas</label>
+                            <input type="radio" name="tiempo" value="1semana" id="estancia">
+                            <label class="radio" for="estancia">Tres semana</label>
+                            <br>
+                            <br>
+
+                            <label class="sms" for="duda">¿Algo que añadir?</label><br>
+                            <textarea id="duda" name="duda" maxlength="420" minlength="2" cols="40" rows="2"></textarea>
+                            <br>
+                            <br>
+                            <input type="checkbox" name="aceptar" value="si" id="acepto" required>
+                            <label for="acepto">He leido y acepto la politica de privacidad</label>
+                            <br>
+                            <br>
+                            ccc
+
+
+                    </fieldset>
+
+            </form>
+    </div>
+
+    </div>
+</main>
+<footer>
+    <div id="footerprincipal">
+        <div class="footercolumna">
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Mercurio_(planeta)" target="_blank">Mercurio</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Venus_(planeta)" target="_blank">Venus</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Tierra" target="_blank">Tierra</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Marte_(planeta)" target="_blank">Marte</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/J%C3%BApiter_(planeta)" target="_blank">Júpiter</a></li>
+            </ul>
+        </div>
+        <div class="footercolumna">
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Saturno_(planeta)" target="_blank">Saturno</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Urano_(planeta)" target="_blank">Uraneo</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)" target="_blank">Neptuno</a></li>
+                <li><a href="https://www.nasa.gov/" target="_blank">Nasa</a></li>
+                <li><a href="https://www.esa.int/" target="_blank">Agencia Espacial Europea</a></li>
+            </ul>
+        </div>
+        <div id="footerimagen">
+            <img src="img/logo-azul.png">
+        </div>
+    </div>
+    <div id="copyright">
+        <p>Space X - &copy; 2020</p>
+    </div>
+</footer>
+</body>
+</html>
