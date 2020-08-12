@@ -272,7 +272,7 @@ label.sms{
     font-weight: bold;
 }
 /************************ PÁGINA SATURNO **********************/
-#saturno{background: url("img/saturnoportada.jpg"); background-repeat: no-repeat; background-size: cover}
+#saturno{background: url("img/saturnoportada2.jpg"); background-repeat: no-repeat; background-size: cover}
 .background > #Saturno{
     background-color: #00326e;
     background-color:rgba(0, 50, 110,0.7);
